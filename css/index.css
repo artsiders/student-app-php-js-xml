@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+  --primary: #2196f3;
+  --secondary: #25c481;
+}
+
+body {
+  background-color: #e4fffb;
+  overflow-x: hidden;
+}
+
+section {
+  margin: 50px;
+}
+
+.hide {
+  transition: 0.5s linear;
+  opacity: 0;
+  transform: translateY(-100vh);
+}
+
+header {
+  width: 100vw;
+  height: 70px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #ffffff;
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+/* main {
+  display: flex;
+} */
+
+#addStudent {
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+form {
+  transition: 0.5s linear;
+  position: absolute;
+  width: 60%;
+  margin: 50px;
+  background: var(--primary);
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 0 60px #00709b70;
+  padding-top: 50px;
+}
+form .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 53, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 14px;
+  padding-right: 50px;
+  border: 1px solid var(--border);
+  background-color: #fff;
+  margin-top: 5px;
+}
+form input:focus {
+  box-shadow: inset 0 0 10px grey;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+}
+form button {
+  background-color: var(--secondary);
+  color: #fff;
+  font-size: 22px;
+  border: 2px solid #fff;
+  margin-top: 30px;
+}
+form input:focus {
+  border: 1px solid var(--primary);
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  background: var(--primary);
+}
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tbl-content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgb(56, 56, 56);
+}
+tr {
+  background-color: var(--primary);
+}
+tr:nth-child(even) {
+  background-color: #e3f2ff;
+}
+
+tr:nth-child(even) td {
+  color: black !important;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
